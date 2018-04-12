@@ -9,6 +9,10 @@ export default StyleSheet.create(
     },
     text: {
       fontSize: 17
+    },
+    img: {
+      width:'100%',
+      height:'100%',
     }
   }
 );

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import { View, Button, Image } from 'react-native'
+import styles from './styles'
 
 const img = 'https://imgs.xkcd.com/comics/history.png';
 export default class ImageView extends PureComponent {
@@ -18,7 +19,7 @@ export default class ImageView extends PureComponent {
     return (
       <View>
         <Button title="关闭" onPress={this._dismiss}/>
-        <Image source={{ uri: img }}/>
+        <Image style={styles.img} source={{ uri: img }}/>
       </View>
     )
   }
